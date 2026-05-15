@@ -256,3 +256,194 @@
     padding: 12px !important;
   }
 }
+/* ===== AJUSTE MOBILE DASHBOARD ===== */
+
+@media (max-width: 700px) {
+  body {
+    background: #f5f8fb;
+  }
+
+  #topo {
+    position: sticky !important;
+    top: 0;
+    z-index: 50;
+    height: 58px !important;
+    min-height: 58px !important;
+    padding: 0 18px !important;
+    justify-content: flex-end !important;
+    background: #fff !important;
+  }
+
+  .topo-ai,
+  .topo-select,
+  .avatar {
+    display: none !important;
+  }
+
+  .topo-icon {
+    width: 34px !important;
+    height: 34px !important;
+    font-size: 18px !important;
+  }
+
+  #quadro_menu {
+    position: sticky !important;
+    top: 58px;
+    z-index: 40;
+    width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
+    padding: 18px 14px 10px !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid #e7edf3 !important;
+    background: #fff !important;
+    overflow: visible !important;
+  }
+
+  #logo_menu {
+    justify-content: center !important;
+    min-height: auto !important;
+    padding: 0 0 18px !important;
+    margin: 0 !important;
+  }
+
+  .logo-mark {
+    width: 54px !important;
+    height: 54px !important;
+    border-radius: 18px !important;
+    font-size: 16px !important;
+  }
+
+  .logo-text {
+    display: none !important;
+  }
+
+  #appointment_button {
+    padding: 0 0 16px !important;
+  }
+
+  #appointment_button a,
+  #appointment_button button {
+    width: 100% !important;
+    height: 56px !important;
+    border-radius: 999px !important;
+    font-size: 0 !important;
+    box-shadow: 0 16px 28px rgba(0, 95, 99, .16) !important;
+  }
+
+  #appointment_button a i,
+  #appointment_button button i {
+    font-size: 22px !important;
+  }
+
+  #appointment_button span {
+    display: none !important;
+  }
+
+  #menu_list {
+    width: 100% !important;
+    display: flex !important;
+    gap: 10px !important;
+    padding: 0 0 8px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scrollbar-width: none !important;
+  }
+
+  #menu_list::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .btn_menu {
+    flex: 0 0 56px !important;
+    width: 56px !important;
+    min-width: 56px !important;
+    height: 56px !important;
+    min-height: 56px !important;
+    padding: 0 !important;
+    border-radius: 999px !important;
+    justify-content: center !important;
+    background: #fff !important;
+    border: 1px solid #e4edf3 !important;
+  }
+
+  .btn_menu.active {
+    background: var(--blue-light) !important;
+    border-color: #cfe4e4 !important;
+    color: var(--blue) !important;
+  }
+
+  .btn_menu::before,
+  .texto_menu,
+  .badge-new {
+    display: none !important;
+  }
+
+  .ico_menu {
+    width: auto !important;
+    height: auto !important;
+    font-size: 20px !important;
+  }
+
+  #conteudo {
+    margin-left: 0 !important;
+    padding: 26px 16px 44px !important;
+  }
+
+  .page-head {
+    display: block !important;
+    margin-bottom: 18px !important;
+  }
+
+  #titGeral {
+    font-size: 34px !important;
+    line-height: 1.05 !important;
+  }
+
+  .page-subtitle {
+    margin-top: 8px !important;
+    font-size: 14px !important;
+  }
+
+  .inicio-hero {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .inicio-main {
+    min-height: auto !important;
+    padding: 26px 24px !important;
+    border-radius: 22px !important;
+  }
+
+  .inicio-main h1 {
+    font-size: 34px !important;
+    line-height: 1.08 !important;
+    max-width: none !important;
+    word-break: normal !important;
+  }
+
+  .inicio-main p {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+
+  .inicio-main .actions-row {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .inicio-main .secondary-btn {
+    width: 100% !important;
+  }
+
+  .inicio-panel {
+    width: 100% !important;
+    border-radius: 20px !important;
+    padding: 20px !important;
+  }
+
+  .inicio-item {
+    align-items
