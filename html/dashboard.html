@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedAgenda - Sistema</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+<body>
+  <header id="topo">
+    <button class="topo-ai" type="button" onclick="alert('Agenda do dia preparada na demo')">
+      <i class="fas fa-wand-magic-sparkles"></i>
+      Ouvir agenda do dia
+    </button>
+
+    <select class="topo-select">
+      <option>victor amorim</option>
+      <option>Dr. Joao Silva</option>
+    </select>
+
+    <button class="topo-icon" type="button" title="Notificacoes"><i class="far fa-bell"></i></button>
+    <button class="topo-icon" type="button" title="Mensagens"><i class="far fa-comment"></i></button>
+    <button class="topo-icon" type="button" title="Configuracoes" onclick="navigateQuick('configuracoes')"><i class="fas fa-gear"></i></button>
+  </header>
+
+  <aside id="quadro_menu">
+    <div id="logo_menu">
+      <div class="logo-mark">MA</div>
+      <div class="logo-text">Med<span>Agenda</span></div>
+    </div>
+
+    <div id="appointment_button">
+      <button type="button" onclick="openAppointmentModal()">
+        <i class="fas fa-plus"></i>
+        <span>Novo Agendamento</span>
+      </button>
+    </div>
+
+    <nav id="menu_list">
+      <button class="btn_menu active" type="button" onclick="navigateTo(this, 'inicio')">
+        <span class="ico_menu"><i class="fas fa-house"></i></span>
+        <span class="texto_menu">Inicio</span>
+      </button>
+
+      <button class="btn_menu" type="button" onclick="navigateTo(this, 'dashboard')">
+        <span class="ico_menu"><i class="fas fa-chart-line"></i></span>
+        <span class="texto_menu">Dashboard</span>
+      </button>
+
+      <button class="btn_menu" type="button" onclick="navigateTo(this, 'agenda')">
+        <span class="ico_menu"><i class="fas fa-calendar-days"></i></span>
+        <span class="texto_menu">Agenda</span>
+      </button>
+
+      <button class="btn_menu" type="button" onclick="navigateTo(this, 'prontuario')">
+        <span class="ico_menu"><i class="fas fa-chart-bar"></i></span>
+        <span class="texto_menu">Prontuario</span>
+      </button>
+
+      <button class="btn_menu" type="button" onclick="navigateTo(this, 'paciente')">
+        <span class="ico_menu"><i class="fas fa-user-plus"></i></span>
+        <span class="texto_menu">Adicionar Paciente</span>
+      </button>
+
+      <button class="btn_menu" type="button" onclick="navigateTo(this, 'marketing')">
+        <span class="ico_menu"><i class="far fa-comment"></i></span>
+        <span class="texto_menu">Marketing</span>
+      </button>
+
+      <button class="btn_menu" type="button" onclick="navigateTo(this, 'financeiro')">
+        <span class="ico_menu"><i class="fas fa-dollar-sign"></i></span>
+        <span class="texto_menu">Financeiro</span>
+      </button>
+
+      <button class="btn_menu" type="button" onclick="navigateTo(this, 'configuracoes')">
+        <span class="ico_menu"><i class="fas fa-cog"></i></span>
+        <span class="texto_menu">Configuracoes</span>
+      </button>
+    </nav>
+  </aside>
+
+  <main id="conteudo"></main>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

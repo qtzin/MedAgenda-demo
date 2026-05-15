@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro | MedAgenda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/cadastro.css" />
+  <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+<body>
+
+<main class="register-page">
+  <section class="register-brand">
+    <a href="../index.html" class="logo">
+      <span class="logo-icon">
+
+      </span>
+      <span>MedAgenda</span>
+    </a>
+
+    <h1>Comece a organizar sua clínica hoje.</h1>
+    <p>Crie sua conta e tenha acesso à agenda, pacientes, financeiro e WhatsApp em uma única plataforma.</p>
+
+    <div class="brand-card">
+      <strong>Implantação simples</strong>
+      <span>Ideal para clínicas, consultórios e profissionais da saúde.</span>
+    </div>
+  </section>
+
+  <section class="register-area">
+    <div class="register-card">
+      <span class="badge">Criar conta</span>
+      <h2>Cadastro da clínica</h2>
+      <p class="subtitle">Preencha os dados abaixo para iniciar sua demonstração.</p>
+
+      <form id="registerForm" class="register-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Nome da clínica</label>
+            <input type="text" id="clinicName" placeholder="Clínica Vida Plena" required>
+          </div>
+
+          <div class="form-group">
+            <label>Responsável</label>
+            <input type="text" id="ownerName" placeholder="Seu nome" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>E-mail</label>
+          <input type="email" id="email" placeholder="contato@clinica.com" required>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label>WhatsApp</label>
+            <input type="tel" id="whatsapp" placeholder="(11) 99999-9999" required>
+          </div>
+
+          <div class="form-group">
+            <label>Plano de interesse</label>
+            <select id="plan" required>
+              <option value="">Selecione</option>
+              <option>Essencial</option>
+              <option>Profissional</option>
+              <option>Clínica+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Senha</label>
+            <input type="password" id="password" placeholder="Crie uma senha" required>
+          </div>
+
+          <div class="form-group">
+            <label>Confirmar senha</label>
+            <input type="password" id="confirmPassword" placeholder="Repita a senha" required>
+          </div>
+        </div>
+
+        <label class="terms">
+          <input type="checkbox" id="terms" required>
+          <span>Concordo com os termos e quero solicitar acesso ao MedAgenda.</span>
+        </label>
+
+        <button type="submit" class="btn-register">Criar conta</button>
+      </form>
+
+      <p class="login-text">
+        Já tem conta?
+        <a href="./Login.html">Entrar no painel</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>

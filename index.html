@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedAgenda | Gestão para Clínicas</title>
+  <meta name="description"
+    content="Sistema simples para clínicas organizarem agenda, pacientes, financeiro e WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/iniciol.css" />
+  <link rel="stylesheet" href="./css/responsive.css">
+
+</head> 
+
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#inicio" class="logo" aria-label="MedAgenda">
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="Abrir menu">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#beneficios">Benefícios</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#planos">Planos</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="header-actions">
+        <a href="./html/Login.html" class="btn btn-outline header-cta2">Sou clientes </a>
+        <a href="./html/cadastro.html" class="btn btn-primary header-cta">Crie sua conta</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge">Sistema para clínicas modernas</span>
+          <h1>Toda gestão da sua clínica em uma plataforma moderna, rápida e inteligente.</h1>
+          <p>
+            Agenda, pacientes, financeiro e WhatsApp em um só lugar para reduzir faltas,
+            ganhar tempo e melhorar a rotina da sua clínica.
+          </p>
+
+          <div class="hero-actions">
+            <a href="./html/cadastro.html" class="btn btn-primary">Criar sua conta já</a>
+            <a href="#contato" class="btn btn-secondary">Fale com uma consultora</a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>+35</strong>
+              <span>clínicas em validação</span>
+            </div>
+            <div>
+              <strong>97%</strong>
+              <span>foco em usabilidade</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>suporte humanizado</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-card" aria-label="Prévia do dashboard MedAgenda">
+          <div class="dashboard-top">
+            <div>
+              <span class="small-label">Dashboard</span>
+              <h2>Hoje na clínica</h2>
+            </div>
+            <span class="live-dot">Ao vivo</span>
+          </div>
+
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <span>Faturamento</span>
+              <strong>R$ 2.450</strong>
+            </div>
+            <div class="metric-card">
+              <span>Consultas</span>
+              <strong>24</strong>
+            </div>
+            <div class="metric-card">
+              <span>Confirmadas</span>
+              <strong>19</strong>
+            </div>
+            <div class="metric-card">
+              <span>Faltas</span>
+              <strong>5%</strong>
+            </div>
+          </div>
+
+          <div class="appointment-list">
+            <div class="appointment-card">
+              <div>
+                <strong>09:30 — Ana Souza</strong>
+                <span>Consulta com Dra. Mariana</span>
+              </div>
+              <span class="status confirmed">Confirmado</span>
+            </div>
+            <div class="appointment-card">
+              <div>
+                <strong>10:15 — Carlos Lima</strong>
+                <span>Retorno • Psicologia</span>
+              </div>
+              <span class="status pending">Pendente</span>
+            </div>
+            <div class="appointment-card">
+              <div>
+                <strong>11:00 — Beatriz Rocha</strong>
+                <span>Lembrete enviado no WhatsApp</span>
+              </div>
+              <span class="status whatsapp">WhatsApp</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="beneficios">
+      <div class="container section-title">
+        <span class="badge">Benefícios</span>
+        <h2>Menos bagunça. Mais controle. Mais tempo.</h2>
+        <p>O MedAgenda foi pensado para clínicas que precisam de organização sem complicação.</p>
+      </div>
+
+      <div class="container cards-grid">
+        <article class="feature-card">
+          <span class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-calendar-check">
+
+              <path d="M8 2v4" />
+              <path d="M16 2v4" />
+              <rect width="18" height="18" x="3" y="4" rx="2" />
+              <path d="M3 10h18" />
+              <path d="m9 16 2 2 4-4" />
+
+            </svg></span>
+          <h3>Agenda inteligente</h3>
+          <p>Organize consultas, retornos e horários disponíveis de forma simples.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-users-icon lucide-users">
+
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+              <circle cx="9" cy="7" r="4" />
+            </svg></span>
+          <h3>Pacientes centralizados</h3>
+          <p>Tenha cadastro, histórico básico e informações importantes em um só lugar.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-message-circle-check-icon lucide-message-circle-check">
+              <path
+                d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" />
+              <path d="m9 12 2 2 4-4" />
+            </svg></span>
+          <p>Envie confirmações, lembretes e mensagens para reduzir faltas.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-chart-no-axes-column-increasing-icon lucide-chart-no-axes-column-increasing">
+              <path d="M5 21v-6" />
+              <path d="M12 21V9" />
+              <path d="M19 21V3" />
+            </svg></span>
+          <h3>Financeiro simples</h3>
+          <p>Acompanhe faturamento, pendências e resultados da clínica.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section light-section" id="funcionalidades">
+      <div class="container split-grid">
+        <div>
+          <span class="badge">Funcionalidades</span>
+          <h2>O essencial para operar uma clínica com mais profissionalismo.</h2>
+          <p>
+            Comece com o que realmente importa e evolua conforme a clínica cresce.
+          </p>
+        </div>
+
+        <ul class="check-list">
+          <li>Agenda e controle de horários</li>
+          <li>Cadastro e histórico de pacientes</li>
+          <li>Confirmações automáticas por WhatsApp</li>
+          <li>Dashboard com indicadores importantes</li>
+          <li>Controle financeiro básico</li>
+          <li>Relatórios para tomada de decisão</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- \ RECURSOS MEDAGENDA -->
+    <section class="section resources-section" id="recursos">
+      <div class="container section-title">
+        <span class="badge">Recursos</span>
+        <h2><span>Recursos</span> para uma gestão clínica completa e eficiente</h2>
+        <p>Ferramentas essenciais para organizar a rotina, automatizar processos e melhorar a experiência da clínica.
+        </p>
+      </div>
+
+      <div class="container resources-grid">
+        <article class="resource-card">
+
+          <span class="resource-icon">
+
+            <!-- \\ COLOQUE O SVG AQUI -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-calendar-check">
+
+              <path d="M8 2v4" />
+              <path d="M16 2v4" />
+              <rect width="18" height="18" x="3" y="4" rx="2" />
+              <path d="M3 10h18" />
+              <path d="m9 16 2 2 4-4" />
+
+            </svg>
+
+          </span>
+
+          <div>
+            <h3>Agenda médica</h3>
+            <p>Organize todos os compromissos</p>
+          </div>
+
+          <ul>
+
+            <li>Agendamentos ilimitados</li>
+            <li>Agendamentos sem cadastro prévio</li>
+            <li>Integrada ao financeiro e pacientes</li>
+            <li>Lembrete de consulta via WhatsApp</li>
+          </ul>
+
+        </article>
+
+        <article class="resource-card">
+          <span class="resource-icon">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-users-icon lucide-users">
+
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+              <circle cx="9" cy="7" r="4" />
+            </svg></span>
+          <div>
+            <h3>Prontuário eletrônico</h3>
+            <p>Uma visão completa do paciente</p>
+          </div>
+          <ul>
+            <li>Fichas de atendimento personalizáveis</li>
+            <li>Prescrição inteligente</li>
+            <li>Assinatura digital de prontuário</li>
+            <li>Inclusão de fotos, vídeos e documentos</li>
+          </ul>
+        </article>
+
+        <article class="resource-card">
+          <span class="resource-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-landmark-icon lucide-landmark">
+              <path d="M10 18v-7" />
+              <path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z" />
+              <path d="M14 18v-7" />
+              <path d="M18 18v-7" />
+              <path d="M3 22h18" />
+              <path d="M6 18v-7" />
+            </svg></span>
+          <div>
+            <h3>Sistema financeiro para clínicas</h3>
+            <p>Organize receitas e despesas</p>
+          </div>
+          <ul>
+            <li>Fluxo de caixa</li>
+            <li>Orçamentos</li>
+            <li>Pacotes de sessões</li>
+            <li>Contratos</li>
+          </ul>
+        </article>
+
+        <article class="resource-card">
+          <span class="resource-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-message-circle-icon lucide-message-circle">
+              <path
+                d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" />
+            </svg></span>
+          <div>
+            <h3>WhatsApp integrado</h3>
+            <p>Automatize a comunicação</p>
+          </div>
+          <ul>
+            <li>Lembretes automáticos de consulta</li>
+            <li>Confirmações pelo WhatsApp</li>
+            <li>Recuperação de pacientes faltosos</li>
+            <li>Mensagens personalizadas</li>
+          </ul>
+        </article>
+
+        <article class="resource-card">
+          <span class="resource-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-chart-no-axes-column-increasing-icon lucide-chart-no-axes-column-increasing">
+              <path d="M5 21v-6" />
+              <path d="M12 21V9" />
+              <path d="M19 21V3" />
+            </svg></span>
+          <div>
+            <h3>Relatórios</h3>
+            <p>Acompanhe o desempenho</p>
+          </div>
+          <ul>
+            <li>Agenda, financeiro e pacientes</li>
+            <li>Indicadores da clínica</li>
+            <li>Taxa de faltas e confirmações</li>
+            <li>Exportação para Excel</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section" id="planos">
+      <div class="container section-title">
+        <span class="badge">Planos</span>
+        <h2>Escolha o melhor plano para sua clínica</h2>
+        <p>Planos flexíveis para consultórios, profissionais e clínicas em crescimento.</p>
+      </div>
+
+      <div class="container pricing-grid">
+        <article class="price-card">
+          <h3>Essencial</h3>
+          <p class="price">R$79<span>/mês</span></p>
+          <p class="plan-desc">Ideal para consultório individual, psicólogos e pequenas operações.</p>
+          <ul>
+            <li>Agenda</li>
+            <li>Cadastro de pacientes</li>
+            <li>Histórico básico</li>
+            <li>Suporte inicial</li>
+          </ul>
+          <a href="#contato" class="btn btn-outline full">Escolher Essencial</a>
+        </article>
+
+        <article class="price-card highlighted">
+          <span class="popular">Mais escolhido</span>
+          <h3>Profissional</h3>
+          <p class="price">R$149<span>/mês</span></p>
+          <p class="plan-desc">Para clínicas que querem automatizar e controlar melhor a operação.</p>
+          <ul>
+            <li>Tudo do Essencial</li>
+            <li>WhatsApp automático</li>
+            <li>Controle financeiro</li>
+            <li>Relatórios</li>
+            <li>Automações básicas</li>
+          </ul>
+          <a href="#contato" class="btn btn-light full">Escolher Profissional</a>
+        </article>
+
+        <article class="price-card">
+          <h3>Clínica+</h3>
+          <p class="price">R$249<span>/mês</span></p>
+          <p class="plan-desc">Para clínicas com equipe, mais controle e necessidade de expansão.</p>
+          <ul>
+            <li>Tudo do Profissional</li>
+            <li>Multiusuários</li>
+            <li>Suporte prioritário</li>
+            <li>Recursos avançados</li>
+            <li>Gestão ampliada</li>
+          </ul>
+          <a href="#contato" class="btn btn-outline full">Escolher Clínica+</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cta-section" id="contato">
+      <div class="container cta-card">
+        <span class="badge badge-light">Demonstração comercial</span>
+        <h2>Sua clínica merece uma gestão mais simples.</h2>
+        <p>Fale com uma consultora e veja como o MedAgenda pode organizar sua operação.</p>
+        <a href="https://wa.me/5500000000000" class="btn btn-light">Falar no WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 MedAgenda. Todos os direitos reservados.</p>
+      <a href="#inicio">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script>
+    var menuButton = document.getElementById("menuButton");
+    var navLinks = document.getElementById("navLinks");
+
+    if (menuButton && navLinks) {
+      menuButton.addEventListener("click", function() {
+        navLinks.classList.toggle("open");
+      });
+    }
+  </script>
+</body>
+
+</html>

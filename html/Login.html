@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | MedAgenda</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/login.css" />
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <main class="login-page">
+    <section class="login-brand">
+      <div class="brand-content">
+        <a href="../index.html" class="logo">
+          <span class="logo-icon">
+            <img src="../img/ChatGPT Image 12 de mai. de 2026, 18_52_50.png" alt="Logo MedAgenda">
+          </span>
+          <span>MedAgenda</span>
+        </a>
+
+        <div class="brand-text">
+          <span class="brand-badge">Sistema para clínicas modernas</span>
+          <h1>Gestão inteligente para clínicas modernas.</h1>
+          <p>
+            Acesse sua conta para gerenciar agenda, pacientes, financeiro e WhatsApp em uma única plataforma.
+          </p>
+        </div>
+
+        <div class="brand-card">
+          <strong>+24 consultas hoje</strong>
+          <span>Agenda atualizada em tempo real</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="login-area">
+      <div class="login-card">
+        <div class="login-header">
+          <span class="badge">Painel da clínica</span>
+          <h2>Entrar na conta</h2>
+          <p>Bem-vindo de volta ao MedAgenda.</p>
+        </div>
+
+        <form class="login-form">
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="exemplo@clinica.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input type="password" id="password" placeholder="Digite sua senha" required />
+          </div>
+
+          <div class="form-options">
+            <label class="remember">
+              <input type="checkbox" />
+              <span>Lembrar acesso</span>
+            </label>
+
+            <a href="#">Esqueci minha senha</a>
+          </div>
+
+          <button type="button" class="btn-login" onclick="entrarPainel()">Acessar demonstração</button>
+        </form>
+
+        <p class="signup-text">
+          Ainda não tem conta?
+          <a href="./cadastro.html">Criar uma conta</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/login.js"></script>
+</body>
+</html>
